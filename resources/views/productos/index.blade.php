@@ -34,7 +34,7 @@
                                 <!-- botón editar -->
                                 <a href="{{ route('productos.edit', $producto->id) }}" class="rounded bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4">Editar</a>
                                 <!-- botón borrar -->
-                                <from action="{{ route('productos.destroy', $producto->id) }}" method="POST" class="formEliminar">
+                                <form action="{{ route('productos.destroy', $producto->id) }}" method="POST" class="formEliminar">
                                     @csrf
                                     @method('DELETE')
                                     <button class="rounded bg-pink-400 hover:bg-pink-500 text-white font-bold py-2 px-4" type="submit">Borrar</button>
